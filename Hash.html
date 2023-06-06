@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proyecto de Compiladores</title>
+  <style> </style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Proyecto de Compiladores</h1>
+
+    <div class="form-group">
+      <label for="expression">Expresión:</label>
+      <input type="text" id="expression" placeholder="Ingresa una expresión" onkeydown="restrictLetters(event)" />
+    </div>
+
+    <div class="form-group">
+      <button onclick="parseExpression()">Analizar</button>
+    </div>
+
+    <div class="form-group">
+      <label for="search">Buscar:</label>
+      <input type="text" id="search" placeholder="Buscar en la tabla" oninput="searchTable()" />
+    </div>
+
+    <div class="result" id="result"></div>
+
+    <div class="symbol-table" id="symbolTable"></div>
+  </div>
+
+  <div class="footer">
+    Proyecto de Compiladores - © 2023
+  </div>
+
+  <script src="Logica.js"></script>
+</body>
+</html>
